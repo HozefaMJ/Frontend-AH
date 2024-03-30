@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+/* App.css */
+.app-container {
+  position: relative; /* Ensure loading container can be positioned relative to this */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.loading-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loading-container img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
+  background-color: #d8e6d9;
+  
+  border-radius: 8px;
+  color: #000;
+  max-width: 800px;
+  margin: 10 ;
+  align-self: center;
+  padding-left: 100px;
+}
+
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 100;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.form-label {
+  margin-bottom: 10px;
+  /* width: 500px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-input {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 600px;
+}
+
+.submit-button {
+  background-color: #fff;
+  color: #5b965e;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.submit-button:hover {
+  background-color: #467a4e;
+  color: #fff;
+}
+
+.response-container {
+  margin-top: 20px;
+}
+
+.response-heading {
+  margin-bottom: 10px;
+}
+
+.response-body {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
 }
