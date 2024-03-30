@@ -8,6 +8,7 @@ function App() {
       justifyContent:'center',
       alignItems:'center',
       backgroundColor: '#d8e6d9'
+      
     }}>
       
        <ApiComponent />
